@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "users")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -19,4 +20,5 @@ public class User {
     private String email;
     private String password;
     public UserType userType;
+
 }
